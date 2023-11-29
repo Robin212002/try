@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Clocks</title>
+  <style>
+    .clock-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .clock {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="clock-container">
+    <div class="clock" id="clock1">00:03:20</div>
+    <button onclick="startStop(1)">Start/Stop</button>
+    <button onclick="subtractTime(1)">Subtract 20 Seconds</button>
+  </div>
+  <div class="clock-container">
+    <div class="clock" id="clock2">00:03:20</div>
+    <button onclick="startStop(2)">Start/Stop</button>
+    <button onclick="subtractTime(2)">Subtract 20 Seconds</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
